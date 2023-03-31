@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 폼 태그
+        action: 폼 데이터가 제출될 URL을 지정합니다. 보통 서버 측 스크립트의 URL을 지정합니다.
+                백엔드 프로그램이 들어올 부분
+                text 형태 데이터 입력 : <input type = 'text' name = '이름지정'>
+        method: 폼 데이터가 서버로 전송될 때 사용되는 HTTP 메소드를 지정합니다. 주로 GET 또는 POST를 사용합니다.
+                get : 보여주면서 보낼 것인가? post : 폼 안의 데이터를 감싸서 보낼 것인가?
+                method 속성을 사용하지 않으면 기본 default 는 get 방식으로 전송된다'
+        name: 폼의 이름을 지정합니다. 폼을 식별하기 위해 사용됩니다.
+        enctype: 폼 데이터가 서버로 전송될 때 인코딩 방식을 지정합니다. 
+        보통 application/x-www-form-urlencoded 또는 multipart/form-data를 사용합니다.
+     -->
+    <form action="link2.html" method="get">
+      <label for="name">이름:</label>
+      <input type="text" id="name" name="name" /><br />
+      <label for="age">나이:</label>
+      <input type="text" name="age" id="age" />
+
+      <label for="email">이메일:</label>
+      <input type="email" id="email" name="email" /><br />
+      <!-- submit :현재 폼을 action 지정한 곳으로 전송 역할 -->
+      <input type="submit" value="제출" />
+    </form>
+  </body>
+</html>
