@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주문서 작성하기</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: first baseline;
+      }
+
+      fieldset {
+        margin: 20px;
+        padding: 20px;
+        border: 2px solid purple;
+        font-weight: bold;
+      }
+
+      label {
+        text-align: right;
+        display: inline-block;
+        width: 200px;
+        margin-right: 20px;
+      }
+
+      input[type="number"] {
+        width: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      span {
+        margin-left: 5px;
+        margin-right: 20px;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        margin-top: 20px;
+        margin-right: 10px;
+        align-items: left;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: right;
+      }
+
+      fieldset legend {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      fieldset div {
+        text-align: left;
+      }
+
+      fieldset {
+        border-color: purple;
+        color: rgb(65, 2, 73);
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="get">
+      <h1>상품 주문서</h1>
+      <fieldset>
+        <legend>개인 정보</legend>
+        <div>
+          <label for="">이름 </label>
+          <input type="name" name="name" placeholder="여백없이 입력" />
+        </div>
+        <div>
+          <label for="">연락처 </label>
+          <input type="tel" name="tel" placeholder="연락가능한 번호" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>배송지 정보</legend>
+        <div>
+          <label for="">주소 </label>
+          <input type="text" name="address" size="20" />
+        </div>
+        <div>
+          <label for="">전화번호 </label>
+          <input type="tel" name="tel2" size="10" />
+        </div>
+        <div>
+          <label for="">메모</label>
+          <textarea name="memo"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>주문정보</legend>
+        <div>
+          <input type="checkbox" id="antigua" name="antigua" value="100g" />
+          <label for="antigua">과테말라 안티구아 (100g)</label>
+          <input
+            type="number"
+            id="antigua_quantity"
+            name="antigua_quantity"
+            value="0"
+            min="0"
+            max="10"
+          />개
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="mandheling"
+            name="mandheling"
+            value="100g"
+          />
+          <label for="mandheling">인도네시아 만델링 (100g)</label>
+          <input
+            type="number"
+            id="mandheling_quantity"
+            name="mandheling_quantity"
+            value="0"
+            min="0"
+            max="10"
+          />
+          개
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="tamra_blend"
+            name="tamra_blend"
+            value="100g"
+          />
+          <label for="tamra_blend">탐라는도다 (블랜딩) (100g)</label>
+          <input
+            type="number"
+            id="tamra_blend_quantity"
+            name="tamra_blend_quantity"
+            value="0"
+            min="0"
+            max="10"
+          />
+          개
+        </div>
+
+        <div>
+          <input type="submit" value="주문하기" />
+          <input type="reset" value="다시작성" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
