@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      width: 100px;
+      height: 50px;
+      background: violet;
+      margin: 10px; /*바깥쪽 여백*/
+
+      display: inline-block;
+    }
+    span {
+      width: 500px;
+      height: 500px;
+      background: blue;
+    }
+    p {
+      text-align: center;
+    }
+    p a {
+      background-color: blue;
+      color: wheat;
+      text-decoration: none;
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      inline
+    }
+
+    .hidden{
+        display: none;
+    }
+  </style>
+
+  <body>
+    <!-- div 
+        블럭 요소 : width : 100% 개념 , height : 0
+
+        span 
+        인라인 요소 : width : 0, height: 0 ==> 내용의 따라 변화
+                    width , height 로 임의의 값을 줄 수 없다
+        display : inline-block(inline + block) inline 은 옆으로 나열하는 요소가 있다.
+                    inline, block,none
+        -->
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <span></span>
+    <p>
+      <a href="#">링크1</a>
+      <a href="#">링크2</a>
+      <a href="#">링크3</a>
+      <a href="#">링크4</a>
+    </p>
+    <div class="hidden">Hidden Area</div>
+  </body>
+</html>
